@@ -4,25 +4,16 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
 }
 
 body {
-    border: 1px dashed red;
-    width: 100% auto;
-}
-
-/* Grid Responsive */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+    width: 100%;
 }
 
 .main {
     width: 95%;
     margin: auto;
-    border: 1px dashed green;
 }
 
 .navbar {
@@ -35,7 +26,7 @@ body {
 }
 
 .pfp img {
-    width: 100%;
+    width: 240px;
 }
 
 .nav-links {
@@ -61,7 +52,6 @@ body {
 
 /* Hero section */
 .hero {
-    border: 1px dashed yellow;
     display: flex;
     justify-content: space-between;
 }
@@ -93,7 +83,6 @@ body {
 
 /* Logo section */
 .company-logos {
-    border: 2px dashed black;
     width: 100%;
     margin: 20px 0px;
     padding: 40px 10px;
@@ -122,6 +111,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    margin: 10px 60px;
     gap: 50px;
 }
 
@@ -134,15 +124,15 @@ body {
 .services-card {
     width: 100%;
     display: flex;
-    gap: 50px;
+    justify-content: space-evenly;
 }
 
 .card1 {
-    width: 600px;
-    text-align: left;
+    width: 800px;
+    height: 300px;
     background-color: rgb(235, 235, 235);
     margin: 20px 60px 20px 60px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 24px;
     border: 1px solid black;
     box-shadow: 0px 4px;
@@ -150,21 +140,29 @@ body {
     justify-content: space-between;
 }
 
-.card1 .title {
+.seo {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+}
+
+.card1 h2 {
+    width: 200px;
     background-color: #b9ff66;
     border-radius: 6px;
     padding: 3px;
-    display: inline-block;
-    font-weight: bold;
-    font-size: large;
+}
+
+.card1-img {
+    width: 280px;
 }
 
 .card2 {
-    width: 600px;
-    text-align: left;
+    width: 800px;
+    height: 300px;
     background-color: #b9ff66;
     margin: 20px 60px 20px 60px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 24px;
     border: 1px solid black;
     box-shadow: 0px 4px;
@@ -172,21 +170,23 @@ body {
     justify-content: space-between;
 }
 
-.card2 .title {
+.ppc {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+}
+
+.card2 h2 {
     background-color: white;
     border-radius: 6px;
     padding: 3px;
-    display: inline-block;
-    font-size: large;
-    font-weight: bold;
 }
 
-.card-details img {
-    width: 200px;
+.card2-img {
+    width: 280px;
 }
 
 .learn {
-    margin: 10px;
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -194,8 +194,204 @@ body {
 }
 
 .learn img {
-    width: 40px;
+    width: 30px;
     background-color: black;
     padding: 10px;
+    border-radius: 50%;
+}
+
+/* Progress section */
+.process {
+    width: 100%;
+}
+
+.process-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 60px;
+    gap: 50px;
+}
+
+.process-head h2 {
+    background-color: #b9ff66;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.process-box {
+    width: 95%;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid black;
+    box-shadow: 0px 4px;
+    padding: 20px;
     border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.process-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.process-box img {
+    width: 50px;
+}
+
+/* Contact section */
+.contact {
+    width: 90%;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    padding: 40px 0px;
+    border: 1px solid black;
+    box-shadow: 0px 4px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-form {
+    width: 500px;
+    padding: 0px 40px;
+}
+
+.text {
+    width: 480px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 0px 12px;
+}
+
+textarea {
+    width: 480px;
+    height: 120px;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.contact-img img {
+    height: 400px;
+}
+
+.contact-form button {
+    width: 500px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+label {
+    margin: 10px;
+}
+
+/* Footer section */
+.footer {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px 40px;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    border-radius: 20px;
+}
+
+.footer a {
+    color: white;
+}
+
+.foot-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pfp-foot {
+    padding: 20px 0px;
+}
+
+.pfp-foot img {
+    width: 200px;
+}
+
+.foot-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.social a {
+    background-color: white;
+    padding: 12px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.social i {
+    width: 20px;
+    color: black;
+}
+
+.contact-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details h2 {
+    background-color: #b9ff66;
+    width: 140px;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.subscribe {
+    width: 600px;
+    height: 180px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subscribe input {
+    width: 240px;
+    padding: 20px;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.subscribe button {
+    width: 240px;
+    padding: 20px;
+    background-color: #b9ff66;
+    color: black;
+    font-size: large;
+    border-radius: 12px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0px;
 }
