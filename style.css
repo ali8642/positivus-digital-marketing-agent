@@ -1,17 +1,22 @@
-:root {
-    color-scheme: ;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 body {
     border: 1px dashed red;
     width: 100% auto;
-    height: 100dvh;
+}
+
+/* Grid Responsive */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
 }
 
 .main {
@@ -21,7 +26,6 @@ body {
 }
 
 .navbar {
-    border: 1px dashed blue;
     width: 100%;
     padding: 24px 12px;
     display: flex;
@@ -53,4 +57,145 @@ body {
     font-size: 20px;
     padding: 15px 30px;
     border-radius: 12px;
+}
+
+/* Hero section */
+.hero {
+    border: 1px dashed yellow;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content {
+    display: grid;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+}
+
+.hero-content p {
+    font-size: 24px;
+}
+
+.hero-content button {
+    font-size: 24px;
+    width: 300px;
+    padding: 0px 25px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+.hero-img img {
+    width: 680px;
+}
+
+/* Logo section */
+.company-logos {
+    border: 2px dashed black;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 40px 10px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: auto;
+}
+
+.logo img {
+    width: 120px;
+}
+
+/* Services section */
+.services {
+    width: 100%;
+}
+
+.services-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.services-head h2 {
+    background-color: #b9ff66;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.services-card {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.card1 {
+    width: 600px;
+    text-align: left;
+    background-color: rgb(235, 235, 235);
+    margin: 20px 60px 20px 60px;
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid black;
+    box-shadow: 0px 4px;
+    display: grid;
+    justify-content: space-between;
+}
+
+.card1 .title {
+    background-color: #b9ff66;
+    border-radius: 6px;
+    padding: 3px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: large;
+}
+
+.card2 {
+    width: 600px;
+    text-align: left;
+    background-color: #b9ff66;
+    margin: 20px 60px 20px 60px;
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid black;
+    box-shadow: 0px 4px;
+    display: grid;
+    justify-content: space-between;
+}
+
+.card2 .title {
+    background-color: white;
+    border-radius: 6px;
+    padding: 3px;
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+}
+
+.card-details img {
+    width: 200px;
+}
+
+.learn {
+    margin: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.learn img {
+    width: 40px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
 }
